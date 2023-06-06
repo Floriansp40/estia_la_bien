@@ -4,6 +4,9 @@ const cors = require('cors')
 // PARAM API
 const app = express()
 
+// J'aime les saucisses
+console.log("j'aime les saucissses")
+
 app.use(cors())
 
 app.use(express.json())
