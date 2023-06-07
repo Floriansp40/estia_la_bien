@@ -17,6 +17,8 @@ app.get('/', (req, res) => res.send(`I'm online. All is OK !`))
 
 app.get('/coffee', (req, res) => res.status(418).send('Coffe time, Dujardin respect'))
 
+app.get('/simonlebest', (req, res) => res.status(200).send('BONGEOURE les DevOps'))
+
 app.get('*', (req, res) => res.status(501).send('What the hell are you doing !?!'))
 
 
