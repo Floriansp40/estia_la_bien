@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => res.send(`I'm online. All is OK !`))
 
+app.get('/coffee', (req, res) => res.status(418).send('Coffe time'))
 
 app.get('*', (req, res) => res.status(501).send('What the hell are you doing !?!'))
 
